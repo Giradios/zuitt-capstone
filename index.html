@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sean Ambrocio | Web Developer Portfolio</title>
+
+	<link rel="icon" href="./images/cloud-fog-fill.svg">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+	<!-- Navbar Here -->
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <ul class="navbar-nav mx-auto">
+		      <li class="nav-item">
+						<li class="nav-item">
+							<a class="nav-link" href="#landing">Home</a>
+						</li>
+		        <a class="nav-link" href="#gallery">Gallery</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#contact">Contact</a>
+		      </li>
+					<li class="nav-item">
+		        <a class="nav-link" href="#tools">Tools</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+	<!-- Navbar Ends Here -->
+
+	<!-- Creates a container for our page section -->
+	<div class="container-fluid">
+
+		<!-- Landing Section Start -->
+		<section class="row jumbotron text-center" id="landing">
+		    <h1 class="text-light">Full Stack Web Developer</h1>
+		    <p class="text-light">Hi! My name is Sean Ambrocio and I'm passionate about learning new things regarding programming! I believe in the importance of hardwork which is why I've come this far in my journey towards programming.</p>
+        <div class="column">
+          <img src="images/me-avatar.svg" class="img-fluid m-3">
+          <img src="images/computer.png" class="img-fluid m-3">
+        </div>
+		    
+		</section>
+		<!-- Landing Section End -->
+
+
+
+
+		<!-- Gallery Section Start -->
+		<section class="container-fluid text-center bg-dark mb-3" id="gallery">
+
+      <div class="bg-dark d-flex flex-row justify-content-center align-items-center">
+        <div class="mr-4 card bg-dark border-dark text-light">
+            <img class="card-img-top" src="images/htmlProject.png">
+            <div class="card-body">
+                <h3 class="card-title">My First Project</h3>
+                <p class="card-text">A simple project made from HTML. Simple with little to no design.</p>
+            </div>
+        </div>
+
+        <div class="card border-dark bg-dark text-light">
+            <img class="card-img-top" src="images/cssProject.png">
+            <div class="card-body">
+                <h3 class="card-title">My Second Project</h3>
+                <p class="card-text">A simple project made from CSS. A representation of my attempts in designing a webpage.</p>
+            </div>
+        </div>
+
+        <div class="ml-4 card bg-dark border-dark text-light">
+            <img class="card-img-top" src="images/bootstrapProject.png">
+            <div class="card-body">
+                <h3 class="card-title">My Third Project</h3>
+                <p class="card-text">A simple project made from Bootstrap</p>
+            </div>
+        </div>
+        
+    </div>
+
+			<div class="tools">
+				<h2>Languages I Speak</h2>
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+				</ul>
+			</div>
+			<div class="tools">
+				<h2>Tools I Use</h2>
+				<ul>
+					<li>Git Bash / Terminal</li>
+					<li>Sublime Text</li>
+					<li>Gitlab</li>
+					<li>Google Chrome</li>
+				</ul>
+			</div>
+		</section>
+		<!-- Gallery Section End -->
+		
+    <!-- Contact Us Start -->
+    <section class="container-fluid text-center bg-dark mb-3" id="contact">
+          <h1 class="text-light">Contact</h1>
+
+					<!-- Social Media Links Start -->
+					<ul class="list-group list-group-horizontal">
+						<li class="bg-secondary list-group-item"><a class="text-light" href="https://www.facebook.com/kai.ambrocio" target="_blank">Facebook</a></li>
+						<li class="bg-secondary list-group-item"><a class="text-light" href="https://gitlab.com/edsci-ambrocio" target="_blank">Gitlab</a></li>
+						<li class="bg-secondary list-group-item"><a class="text-light" href="https://www.linkedin.com/in/sean-ambrocio-9bb48426a/" target="_blank">LinkedIn</a></li>
+					</ul>
+					<!-- Social Media Links End -->
+					
+					<!-- Form Start -->
+					<div class="container-fluid bg-dark pt-3">
+						<div class="container-fluid w-25 bg-secondary border-primary rounded">   
+						 <form>
+								<div class="bg-secondary form-group text-light">
+									<label class="mb-1 mt-3" for="name">Name</label>
+									<input type="text" class="form-control" id="name" placeholder="Your Name" required>
+
+									<label class="mb-1 mt-3" for="email">Email Address</label>
+									<input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+
+									<label class="mb-1 mt-3" for="number">Contact Number</label>
+									<input type="tel" class="form-control" id="number" placeholder="+63 900 000 0000" required>
+
+									<div class="form-group">
+										<label class="mb-1 mt-3" for="exampleFormControlTextarea1">Message</label>
+										<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+									<button type="button" class="btn btn-dark text-light mb-3" data-toggle="modal" data-target="#modalForm">Submit</button>
+										<!-- Form End -->
+
+									<!-- Modal Start -->
+									<div class="modal fade text-dark" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h5 class="modal-title" id="modalLabel">Thank You for the Submission!</h5>
+													<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													This email should be viewed in a span of a couple of days. I kindly ask for your patience as we review your submission and formulate a response. Please contact jimenez_kai@yahoo.com regarding your concerns. Have a great day!
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+													<button type="button" class="btn btn-primary">Save changes</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Modal End -->
+
+								</div>
+						 	</form>
+						 <!-- Contact Section End -->
+					 </div>
+				 </div>
+    </section>
+    <!-- Contact Us End -->
+
+		<!-- Tools Section -->
+		<footer class="container-fluid text-center text-primary bg-dark" id="tools">
+			<div class="row flex-column">
+				<h1 class="mt-5 text-center">Tools</h1>
+				<div class="row justify-content-center py-3">
+					<div class="col-md-3 col-lg-2 mx-4 my-3">
+						<h3 class="my-3 text-center">Front End</h3>
+						<div class="row justify-content-center">
+							<div class="col-6">
+								<img src="./images/html5.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="./images/css3.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="./images/bs.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="./images/js.png" class="img-fluid">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-lg-2 mx-4 my-3">
+						<h3 class="my-3 text-center">MERN</h3>
+						<div class="row justify-content-center">
+							<div class="col-6">
+								<img src="./images/mongodb.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="./images/ejs.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="./images/react.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="./images/nodejs.png" class="img-fluid">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-lg-2 mx-4 my-3">
+						<h3 class="my-3 text-center">Other Tools</h3>
+						<div class="row justify-content-center">
+							<div class="col-6">
+								<img src="./images/heroku.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="./images/git.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="./images/postman.png" class="img-fluid">
+							</div>
+							<div class="col-6">
+								<img src="./images/sublime-text-3.png" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Tools Section End -->
+	</div>
+
+
+	<!-- JS Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
